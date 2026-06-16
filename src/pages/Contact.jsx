@@ -118,10 +118,10 @@ export default function Contact() {
         <section className="mt-section-gap relative h-[400px] w-full overflow-hidden bg-surface-container reveal" style={{ animationDelay: '0.3s' }}>
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70 hover:opacity-100 transition-opacity duration-700 scale-[1.15]" style={{ backgroundImage: "url('/images/dehradun_map.png')" }}></div>
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="text-center p-gutter bg-canvas/90 backdrop-blur-md border border-outline-variant shadow-2xl">
-              <p className="font-metadata text-metadata uppercase tracking-[0.2em] font-bold text-primary">Dehradun, Uttarakhand, India</p>
-              <p className="font-metadata text-metadata text-secondary mt-2">UTC+5:30 (Indian Standard Time)</p>
-              {timeString && <p className="font-metadata text-metadata mt-2 text-primary opacity-80">[{timeString} IST]</p>}
+            <div className="text-center p-4 sm:p-gutter bg-canvas/90 backdrop-blur-md border border-outline-variant shadow-2xl mx-4 sm:mx-0 w-[85%] sm:w-auto">
+              <p className="text-[10px] sm:text-xs md:font-metadata md:text-metadata uppercase tracking-[0.1em] sm:tracking-[0.2em] font-bold text-primary">Dehradun, Uttarakhand, India</p>
+              <p className="text-[9px] sm:text-[10px] md:font-metadata md:text-metadata text-secondary mt-1 md:mt-2">UTC+5:30 (Indian Standard Time)</p>
+              {timeString && <p className="text-[9px] sm:text-[10px] md:font-metadata md:text-metadata mt-1 md:mt-2 text-primary opacity-80">[{timeString} IST]</p>}
             </div>
           </div>
         </section>

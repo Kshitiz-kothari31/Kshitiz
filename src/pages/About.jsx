@@ -93,7 +93,7 @@ export default function About() {
         {/* Experience & Contacts Grid */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
           {/* Contact List */}
-          <div className="md:col-span-4 reveal-base delay-1" ref={addToRevealRefs}>
+          <div className="md:col-span-4 reveal-base delay-1 mb-16 md:mb-0" ref={addToRevealRefs}>
             <div className="flex justify-between items-center mb-gutter">
               <h2 className="font-section-header text-section-header uppercase tracking-widest">Contact</h2>
               <span className="font-metadata text-metadata text-secondary">[2]</span>
@@ -269,8 +269,8 @@ export default function About() {
           {/* Quick Stats Banner */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="border-t border-primary pt-6 group text-center">
-              <p className="font-display-title text-6xl md:text-7xl font-bold text-primary mb-2 transition-transform duration-500 group-hover:-translate-y-2">25<span className="text-4xl text-secondary align-top">+</span></p>
-              <p className="font-metadata text-metadata text-faded uppercase tracking-widest">Projects Delivered</p>
+              <p className="font-display-title text-6xl md:text-7xl font-bold text-primary mb-2 transition-transform duration-500 group-hover:-translate-y-2">15<span className="text-4xl text-secondary align-top">+</span></p>
+              <p className="font-metadata text-metadata text-faded uppercase tracking-widest">Satisfied Clients</p>
             </div>
             <div className="border-t border-outline-variant hover:border-primary transition-colors duration-500 pt-6 group text-center">
               <p className="font-display-title text-6xl md:text-7xl font-bold text-primary mb-2 transition-transform duration-500 group-hover:-translate-y-2">100<span className="text-4xl text-secondary align-top">%</span></p>

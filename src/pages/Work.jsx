@@ -162,12 +162,10 @@ export default function Work() {
           </div>
 
           {selectedProjects.map((project) => (
-            <a
+            <div
               key={project.ref}
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
               className="relative flex flex-col border-b border-outline-variant group cursor-crosshair hover:bg-surface transition-colors"
+              onClick={() => {}}
             >
               {/* List Row */}
               <div className="flex justify-between items-center w-full py-6 px-4 md:px-0 transition-opacity duration-300 group-hover:opacity-50">
@@ -192,10 +190,12 @@ export default function Work() {
                       {project.description}
                     </p>
                   </div>
-                  <img src={project.image} className="w-full h-auto object-contain grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 rounded-lg shadow-md" alt={`${project.name} preview`} />
+                  <a href={project.link} target="_blank" rel="noreferrer" className="block relative z-20 cursor-pointer">
+                    <img src={project.image} className="w-full h-auto object-contain grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 rounded-lg shadow-md hover:scale-[1.01]" alt={`${project.name} preview`} />
+                  </a>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </section>
 

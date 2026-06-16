@@ -8,26 +8,26 @@ export default function Footer() {
   return (
     <>
       <footer className="w-full mt-16 md:mt-24 bg-canvas border-t border-outline-variant pb-12 md:pb-0 relative z-40">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto px-6 md:px-12 py-8 md:py-12 gap-6 md:gap-10 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center max-w-[1100px] mx-auto px-6 md:px-12 py-10 md:py-12 gap-8 md:gap-10">
           
           {/* Profile Section (Top on mobile, Right on desktop) */}
-          <div className="flex flex-row items-center gap-3 md:gap-4 md:w-1/3 md:justify-end order-1 md:order-3">
-            <img src="https://ui-avatars.com/api/?name=Kshitiz+Kothari&background=random&color=fff&rounded=true" className="w-10 h-10 md:w-12 md:h-12 object-cover grayscale opacity-80 rounded-full border border-outline-variant shadow-sm" alt="Kshitiz Kothari" />
+          <div className="flex flex-row items-center gap-4 md:w-1/3 md:justify-end order-1 md:order-3 w-full border-b border-outline-variant md:border-0 pb-6 md:pb-0">
+            <img src="https://ui-avatars.com/api/?name=Kshitiz+Kothari&background=random&color=fff&rounded=true" className="w-12 h-12 object-cover grayscale opacity-80 rounded-full border border-outline-variant shadow-sm" alt="Kshitiz Kothari" />
             <div className="flex flex-col items-start">
-              <span className="font-metadata text-[10px] md:text-[11px] text-primary uppercase tracking-widest font-bold">KSHITIZ KOTHARI</span>
-              <span className="font-metadata text-[9px] md:text-[10px] text-secondary uppercase tracking-widest mt-0.5 md:mt-1">SOFTWARE ENGINEER</span>
+              <span className="font-metadata text-[11px] text-primary uppercase tracking-widest font-bold">KSHITIZ KOTHARI</span>
+              <span className="font-metadata text-[10px] text-secondary uppercase tracking-widest mt-1">SOFTWARE ENGINEER</span>
             </div>
           </div>
           
           {/* Links Section (Middle on both) */}
-          <div className="flex flex-wrap justify-center gap-5 md:gap-8 font-metadata text-[10px] md:text-xs uppercase tracking-widest md:w-1/3 order-2 mt-2 md:mt-0">
-            <a className="text-secondary hover:text-primary transition-all duration-300 border-b border-transparent hover:border-primary pb-1" href="https://github.com/Kshitiz-kothari31" target="_blank" rel="noreferrer">GITHUB</a>
-            <a className="text-secondary hover:text-primary transition-all duration-300 border-b border-transparent hover:border-primary pb-1" href="https://www.linkedin.com/in/kshitiz-kothari-455950326" target="_blank" rel="noreferrer">LINKEDIN</a>
-            <a className="text-secondary hover:text-primary transition-all duration-300 border-b border-transparent hover:border-primary pb-1" href="https://github.com/Kshitiz-kothari31" target="_blank" rel="noreferrer">SOURCE</a>
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 font-metadata text-[11px] md:text-xs uppercase tracking-widest md:w-1/3 order-2 w-full border-b border-outline-variant md:border-0 pb-6 md:pb-0">
+            <a className="text-secondary hover:text-primary transition-all duration-300 w-fit" href="https://github.com/Kshitiz-kothari31" target="_blank" rel="noreferrer">GITHUB</a>
+            <a className="text-secondary hover:text-primary transition-all duration-300 w-fit" href="https://www.linkedin.com/in/kshitiz-kothari-455950326" target="_blank" rel="noreferrer">LINKEDIN</a>
+            <a className="text-secondary hover:text-primary transition-all duration-300 w-fit" href="https://github.com/Kshitiz-kothari31" target="_blank" rel="noreferrer">SOURCE</a>
           </div>
 
           {/* Copyright Section (Bottom on mobile, Left on desktop) */}
-          <div className="font-metadata text-[9px] md:text-[10px] text-faded uppercase tracking-widest md:w-1/3 md:justify-start flex md:block order-3 md:order-1 mt-2 md:mt-0">
+          <div className="font-metadata text-[10px] text-faded uppercase tracking-widest md:w-1/3 md:justify-start flex md:block order-3 md:order-1 pt-2 md:pt-0">
             © {new Date().getFullYear()} ALL RIGHTS RESERVED
           </div>
 
