@@ -1,9 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Work() {
+  const [expandedProject, setExpandedProject] = useState(null);
+
   const selectedProjects = [
     {
       ref: "01",
@@ -161,25 +163,27 @@ export default function Work() {
             <div className="w-16 text-right">YEAR</div>
           </div>
 
-          {selectedProjects.map((project) => (
+          {selectedProjects.map((project) => {
+            const isExpanded = expandedProject === project.ref;
+            return (
             <div
               key={project.ref}
-              className="relative flex flex-col border-b border-outline-variant group cursor-crosshair hover:bg-surface transition-colors"
-              onClick={() => {}}
+              className={`relative flex flex-col border-b border-outline-variant group cursor-crosshair transition-colors ${isExpanded ? 'bg-surface' : 'hover:bg-surface'}`}
+              onClick={() => setExpandedProject(isExpanded ? null : project.ref)}
             >
               {/* List Row */}
-              <div className="flex justify-between items-center w-full py-6 px-4 md:px-0 transition-opacity duration-300 group-hover:opacity-50">
+              <div className={`flex justify-between items-center w-full py-6 px-4 md:px-0 transition-opacity duration-300 ${isExpanded ? 'opacity-50' : 'group-hover:opacity-50'}`}>
                 <div className="w-12 text-metadata font-metadata text-faded relative z-10">{project.ref}</div>
                 <div className="flex-1 flex items-center gap-3 relative z-10">
                   <div className={`w-1.5 h-1.5 ${project.colorClass}`}></div>
-                  <span className="font-bold group-hover:text-primary transition-colors">{project.name}</span>
+                  <span className={`font-bold transition-colors ${isExpanded ? 'text-primary' : 'group-hover:text-primary'}`}>{project.name}</span>
                 </div>
                 <div className="w-1/3 text-metadata font-metadata text-secondary md:block hidden relative z-10">{project.stack}</div>
                 <div className="w-16 text-right text-metadata font-metadata text-secondary relative z-10">{project.year}</div>
               </div>
 
               {/* Expanding Detail View */}
-              <div className="w-full overflow-hidden h-0 group-hover:h-auto opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out relative z-10">
+              <div className={`w-full overflow-hidden transition-all duration-500 ease-in-out relative z-10 ${isExpanded ? 'h-auto opacity-100' : 'h-0 opacity-0 md:group-hover:h-auto md:group-hover:opacity-100'}`}>
                 <div className="pt-4 pb-8 px-4 md:px-0">
                   <div className="md:ml-12 mb-8 border-l border-outline-variant pl-6">
                     <div className="flex items-center gap-3 mb-4">
@@ -190,13 +194,13 @@ export default function Work() {
                       {project.description}
                     </p>
                   </div>
-                  <a href={project.link} target="_blank" rel="noreferrer" className="block relative z-20 cursor-pointer">
-                    <img src={project.image} className="w-full h-auto object-contain grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 rounded-lg shadow-md hover:scale-[1.01]" alt={`${project.name} preview`} />
+                  <a href={project.link} target="_blank" rel="noreferrer" className="block relative z-20 cursor-pointer" onClick={(e) => e.stopPropagation()}>
+                    <img src={project.image} className={`w-full h-auto object-contain grayscale brightness-90 transition-all duration-700 rounded-lg shadow-md ${isExpanded ? 'grayscale-0' : 'group-hover:grayscale-0 hover:scale-[1.01]'}`} alt={`${project.name} preview`} />
                   </a>
                 </div>
               </div>
             </div>
-          ))}
+          )})}
         </section>
 
         {/* Footer Visual */}
