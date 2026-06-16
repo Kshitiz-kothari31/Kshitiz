@@ -14,15 +14,15 @@ export default function Navbar() {
 
   return (
     <header className="w-full top-0 sticky bg-canvas border-b border-outline-variant z-50">
-      <nav className="flex justify-between items-center max-w-[1100px] mx-auto px-margin-mobile md:px-margin-desktop py-8 cursor-crosshair">
-        <Link className="font-caveat text-4xl font-bold tracking-normal text-primary" to="/">Kshitiz</Link>
+      <nav className="flex justify-between items-center max-w-[1100px] mx-auto px-6 md:px-12 py-6 md:py-8 cursor-crosshair">
+        <Link className="font-caveat text-3xl md:text-4xl font-bold tracking-normal text-primary" to="/">Kshitiz</Link>
         <div className="hidden md:flex gap-8 items-center">
           <Link className={getLinkClass('/')} to="/">WORK</Link>
           <Link className={getLinkClass('/about')} to="/about">ABOUT</Link>
           <Link className={getLinkClass('/contact')} to="/contact">CONTACT</Link>
         </div>
         <div className="flex items-center gap-4">
-          <Link className="font-section-header text-section-header uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300" to="/resume">RESUME</Link>
+          <Link className="font-section-header text-sm md:text-base uppercase tracking-widest text-secondary hover:text-primary transition-colors duration-300" to="/resume">RESUME</Link>
         </div>
       </nav>
     </header>

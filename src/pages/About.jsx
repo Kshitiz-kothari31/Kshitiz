@@ -179,10 +179,10 @@ export default function About() {
 
         {/* Technical Stack */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap reveal-base delay-3" ref={addToRevealRefs}>
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 mb-8 md:mb-0">
             <h2 className="font-section-header text-section-header uppercase tracking-widest text-faded">Stack</h2>
           </div>
-          <div className="md:col-span-10 grid grid-cols-1 sm:grid-cols-3 gap-gutter">
+          <div className="md:col-span-10 grid grid-cols-1 sm:grid-cols-3 gap-12 md:gap-gutter">
             <div>
               <h4 className="font-metadata text-metadata font-bold mb-4 border-b border-primary pb-2 uppercase">Languages</h4>
               <ul className="font-metadata text-metadata space-y-2">
