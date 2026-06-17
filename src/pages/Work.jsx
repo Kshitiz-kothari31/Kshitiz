@@ -203,14 +203,26 @@ export default function Work() {
           )})}
         </section>
 
-        {/* Footer Visual */}
-        <div
-          className="flex justify-center py-section-gap opacity-30 reveal-up"
+        {/* Call to Action */}
+        <section
+          className="py-section-gap flex flex-col items-center text-center reveal-up"
           style={{ transitionDelay: '0.5s' }}
           ref={addToRevealRefs}
         >
-          <img className="w-16 grayscale" alt="Minimalist architectural icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAOGEwIQnp2NIuGoPxnVYWm2vE-RbXKWyXJ_VjyHrF2GlCqrBMt-T1jEyDcbOWAEcu3Gz2XVPVV7XGSlLOPXzyv239Q0gYc2ayGrs7Zm_V6tsgF-BxEcatrsINjQ3Tdn5wPCKEd9TW7bbWb92rF9QO8iH2bYIksvQDVtXeQlj6cnlT1LMW29BQiJV9F52QF1Gsx0VA1EDAYvihfv1FJXrD1aJLQH20rgKHF2ibgSwsif4OoTmPMqT5VCtmKLh8P-_jToj4WCZ8unw" />
-        </div>
+          <h2 className="font-display-title text-3xl md:text-4xl font-extrabold tracking-tighter mb-6">
+            Ready to build something amazing?
+          </h2>
+          <p className="text-secondary max-w-lg font-body-intro mb-8">
+            Let's collaborate to create scalable, high-performance web applications and robust architectures.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-3 border border-outline-variant hover:border-primary hover:text-primary transition-colors py-3 px-8 rounded-full font-metadata text-xs uppercase tracking-widest"
+          >
+            Start a Conversation
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </Link>
+        </section>
       </main>
 
       <Footer />

@@ -147,31 +147,31 @@ export default function About() {
                 <div className="flex gap-4">
                   <div className="w-1 h-4 bg-primary mt-1"></div>
                   <div>
-                    <h3 className="font-list-item text-list-item font-bold">TECH INNOVATION INC.</h3>
-                    <p className="font-metadata text-metadata text-secondary uppercase">Software Engineer</p>
+                    <h3 className="font-list-item text-list-item font-bold uppercase">Freelance Developer</h3>
+                    <p className="font-metadata text-metadata text-secondary uppercase">Full-Stack Engineer</p>
                   </div>
                 </div>
-                <span className="font-metadata text-metadata">2023 – PRESENT</span>
+                <span className="font-metadata text-metadata">2024 – PRESENT</span>
               </div>
               <div className="flex justify-between items-start border-b border-outline-variant pb-4">
                 <div className="flex gap-4">
                   <div className="w-1 h-4 bg-accent-red mt-1"></div>
                   <div>
-                    <h3 className="font-list-item text-list-item font-bold">SCALEUP SOLUTIONS</h3>
-                    <p className="font-metadata text-metadata text-secondary uppercase">Backend Engineer</p>
+                    <h3 className="font-list-item text-list-item font-bold uppercase">Open Source Contributor</h3>
+                    <p className="font-metadata text-metadata text-secondary uppercase">Systems & Web Developer</p>
                   </div>
                 </div>
-                <span className="font-metadata text-metadata">2021 – 2023</span>
+                <span className="font-metadata text-metadata">2023 – PRESENT</span>
               </div>
               <div className="flex justify-between items-start border-b border-outline-variant pb-4 opacity-50">
                 <div className="flex gap-4">
                   <div className="w-1 h-4 bg-secondary-fixed-dim mt-1"></div>
                   <div>
-                    <h3 className="font-list-item text-list-item font-bold">OPEN SOURCE</h3>
-                    <p className="font-metadata text-metadata text-secondary uppercase">Full-Stack Contributor</p>
+                    <h3 className="font-list-item text-list-item font-bold uppercase">MCA Scholar</h3>
+                    <p className="font-metadata text-metadata text-secondary uppercase">Computer Applications</p>
                   </div>
                 </div>
-                <span className="font-metadata text-metadata">2019 – 2021</span>
+                <span className="font-metadata text-metadata">2023 – PRESENT</span>
               </div>
             </div>
           </div>
